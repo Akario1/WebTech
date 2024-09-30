@@ -1,45 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-    font-family: "Roboto";
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
-.footer {
-    position: fixed;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    background-color: rgba(31,41,54,255);
-    border: 25px solid rgba(31,41,54,255); 
+header {
+    display: flex;
+    background-color: rgb(31,41,54,255);
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
 }
 
-li {
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 10px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
     display: inline;
-    padding: 12px;
+    padding: 20px;
 }
 
-a {
+li a {
     text-decoration: none;
     color: white;
 }
 
-nav {
+.subheader {
+    background-color: rgb(31,41,50,230);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.subheader-content {
+    color: white;
+    text-align: left;
+}
+
+.subheader-content h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.subheader-content p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: cornflowerblue;
     text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 40px;
+    width: 80px;
+    font-size: large;
 }
 
-header {
-    position: fixed;
-    background-color: rgba(31,41,54,255);
-    width: 100%;
-    left: 0;
-    top: 0;
+.funny-gif {
+    justify-content: center;
+    padding-left: 20px;
 }
 
-header > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+.main-content{
+    padding-top: 25px;
+    text-align-last: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.main-content h1 {
+    font-size: xx-large;
+}
+
+.area {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.area.left .square{
+    margin-right: 40px;
+}
+
+.area.right {
+    flex-direction: row-reverse;
+}
+
+.area.right .square{
+    margin-left: 40px;
+}
+
+
+
+.square {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    border: 3px solid lightskyblue;
+    border-radius: 5px;
+}
+
+.text-area1 {
+    text-align: left;
+}
+
+.text-box {
+    max-width: 400px;
+    text-align: left;
+}
+
+.area2 {
+    text-align: left;
 }
