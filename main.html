@@ -3,41 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daviddpOblig</title>
+    <title>daviddp</title>
     <link rel="stylesheet" href="style.css">
-</head>
 <body>
     <header>
-        <img src="logo.png" alt="WebSiteLogo">  <!--Logo made with https://looka.com/editor/197574210-->
-        <nav id="main-nav">
+        <div class="logo">
+            <img src="logo.png" alt="logo"> <!--Logo made with https://looka.com/editor/197574210-->
+        </div>
+        <nav>
             <ul>
-                <li><a href="#"><b>Header Link one</b></a></li>
-                <li><a href="#"><b>Header Link two</b></a></li>
-                <li><a href="#"><b>Header Link three</b</a></li>
+                <li><a href="#">Header link one</a></li>
+                <li><a href="#">Header link two</a></li>
+                <li><a href="#">Header link three</a></li>
             </ul>
         </nav>
-        <button>Sign up</button>
     </header>
-    
+
+    <section class="subheader">
+        <div class="subheader-content">
+            <h1>This website is <br>awesome</h1>
+            <p>This is probably the coolest website you have ever seen, is it not?</p>
+            <button class="btn">sign up</button>
+        </div>
+        <div class="funny-gif">
+            <img src="nyan-cat-rainbow.gif" alt="nyancat">
+        </div>
+    </section>
+
     <section class="main-content">
-        <h2>
-            Some random information
-        </h2>
+        <h1>The story of NyanCat</h1>
+        <div class="area left">
+            <div class="square"></div>
+            <div class="text-box">
+                <p>Nyan Cat is a YouTube video uploaded in April 2011,
+                which became an Internet meme. The video merged a Japanese pop song 
+                with an animated cartoon cat with a Pop-Tart for a torso flying through space and 
+                leaving a rainbow trail behind. The video ranked at number 
+                five on the list of most viewed YouTube videos in 2011.</p>
+            </div>
+        </div>
+        <div class="area right">
+            <div class="square"></div>
+            <div class="text-box">
+                <p>
+                    On April 2, 2011, the GIF animation of the cat was posted by 25-year-old 
+                    Christopher Torres of Dallas, Texas, who uses the name "prguitarman", 
+                    on his website LOL-Comics. Torres explained in an interview where the 
+                    idea for the animation came from: "I was doing a donation drive for the Red Cross 
+                    and in-between drawings in my Livestream video chat, two different people mentioned 
+                    I should draw a 'Pop Tart' and a 'cat'." In response, he created a hybrid image of a 
+                    Pop-Tart and a cat, which was developed a few days later into the animated GIF. 
+                    Nyan Cat was based on a real cat: Torres' pet cat Marty, who died in November 2012 from 
+                    feline infectious peritonitis.
+                </p>
+            </div>
+        </div>
+        <p>Hentet fra https://en.wikipedia.org/wiki/Nyan_Cat</p>
     </section>
 
-    <section class="inspiring quote">
-        <blockquote>
-
-        </blockquote>
-        <cite>- Thor</cite>
+    <section class="quote">
+        <p class="quote-text">You could be good today. But instead, you choose tomorrow.</p>
+        <p class="quote-author">- Marcus Aurelius</p>
     </section>
-
-    <section class="call-to-action">
-        <button>Sign up</button>
-    </section>
-
-    <footer class="footer">
-        <p>Copyright ©</p>
-    </footer>
+    
 </body>
 </html>
