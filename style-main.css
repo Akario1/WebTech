@@ -1,0 +1,96 @@
+@import url('shared.css');
+
+.main-content{
+    padding-top: 25px;
+    text-align-last: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.main-content h1 {
+    font-size: xx-large;
+}
+
+.area {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.area.left .square{
+    margin-right: 40px;
+}
+
+.area.right {
+    flex-direction: row-reverse;
+}
+
+.area.right .square{
+    margin-left: 40px;
+}
+
+
+
+.square {
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    border: 3px solid lightskyblue;
+    border-radius: 5px;
+}
+
+.text-area1 {
+    text-align: left;
+}
+
+.text-box {
+    max-width: 400px;
+    text-align: left;
+}
+
+.area2 {
+    text-align: left;
+}
+
+
+.quote {
+    border: solid 1px;
+    border-left: 20px;
+    background-color: lightgray;
+    height: 200px;
+}
+
+.quote-text {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.quote-author {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 400px;
+}
+
+.call-to-action {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.call-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #198CFF;
+    border-radius: 6px;
+    width: 600px;
+    color: white;
+    padding: 20px;
+}
