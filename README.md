@@ -1,1 +1,1 @@
-David Devold Pearson sin løsning
+David Devold Pearson sin løsning (daviddp)
