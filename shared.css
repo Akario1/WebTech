@@ -9,18 +9,18 @@ header {
     display: flex;
     background-color: rgb(31,41,54,255);
     align-items: center;
-    padding: 0px;
+    padding: 50px;
     margin: 0px;
     flex-direction: column;
-    border-bottom: solid 0.01px whitesmoke;
+    border-bottom: 1px solid rgba(37,47,62,255);
 }
+
+
 
 .logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 30%;
-    margin-bottom: 10px;
+    margin: auto;
 
 }
 
@@ -41,7 +41,7 @@ li a {
 }
 
 .subheader {
-    background-color: rgb(31,41,50,230);
+    background-color: rgb(31,41,54,255);
     display: flex;
     justify-content: center;
     padding: 100px;
@@ -88,6 +88,6 @@ footer {
     color: white;
     text-align: center;
     position: bottom;
-    bottom: 0;
+    bottom: 0%;
     padding: 40px;
 }
