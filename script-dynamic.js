@@ -1,6 +1,11 @@
 let page = 1
 
-function fetchData(){
+/**
+ * Fetches an entire page of posts from the jsonplacehodler api
+ * dynamically creates div's for the posts 
+ * 
+ */
+function fetchPosts(){
     const url = `https://jsonplaceholder.typicode.com/posts?_page=${page}`;
 
     fetch(url)
@@ -26,15 +31,15 @@ function fetchData(){
 /**
  * adds an  event listener to the current windows
  * when the user scrolls further than the height of the page
- * fetchData() is called
+ * fetchPosts() is called
  */
 window.addEventListener('scroll', ()=> {
-    if(window.scrollY + window.innerHeight >=
+    if(window.scrollY + window.innerHeight ==
         document.documentElement.scrollHeight)
         {
-            fetchData();
+            fetchPosts();
     }
 });
 
 // initial data
-fetchData();
+fetchPosts();
