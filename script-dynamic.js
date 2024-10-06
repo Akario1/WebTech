@@ -10,6 +10,10 @@ function fetchPosts(){
 
     fetch(url)
     .then(response => {
+        //Error handling
+        if(!response.ok){
+            throw new Error(`Error! status: ${response.status}`)
+        }
         return response.json();
     })
 
@@ -17,11 +21,12 @@ function fetchPosts(){
         const container = document.getElementById('post-container');
 
         if (data.length > 0) {
+            // loops through all data on page x 
             data.forEach(post => {
-                const postDiv = document.createElement('div');
-                postDiv.classList.add('post');
-                postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.body}</p>`;
-                container.appendChild(postDiv);
+                const postDiv = document.createElement('div'); // creates a div
+                postDiv.classList.add('post'); // adds a class to the new div
+                postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.body}</p>`; // sets the content inside psotDiv to display post title and post body
+                container.appendChild(postDiv); // adds the new div to an existing div in the HTML
             })
         };
         page++;
@@ -41,5 +46,5 @@ window.addEventListener('scroll', ()=> {
     }
 });
 
-// initial data
+// initial fetch
 fetchPosts();

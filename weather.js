@@ -1,3 +1,6 @@
+/**
+ * Array of objects with locations of 5 places
+ */
 const locations = [
     {city: 'Gjøvik', latitude: 60.7957, longitude: 10.6915},
     {city: 'Oslo', latitude: 59.9127, longitude: 10.7461},
@@ -10,15 +13,27 @@ const locations = [
 
 const container = document.getElementById('weather-container');
 
+// clears the text in weather container
 function clearDocument() {
     container.innerHTML = ``;
 }
 
+
+/**
+ * 
+ * @param {*} location
+ * fetches weather data from a location
+ * and creates a div to display the fetched data 
+ */
 function getWeather(location){
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${location.latitude}&longitude=${location.longitude}&current_weather=true`
     
     fetch(url)
     .then(response => {
+        // error handling
+        if(!response.ok){
+            throw new Error(`Error! status: ${response.status}`)
+        }
          return response.json();
     })
 
@@ -39,6 +54,11 @@ function getWeather(location){
     })
 }
 
+/**
+ * Clears document so the old data is removed
+ * loops through the array of objects and calls on the function 
+ * with the current location beeing looped through
+ */
 function fetchAll(){
     clearDocument();
     locations.forEach(location => {
@@ -46,6 +66,11 @@ function fetchAll(){
     });
 }
 
+// initial fetch
 fetchAll();
 
-setInterval(fetchAll, 900000)
+
+/**
+ * function is called upon every hour 
+ */
+setInterval(fetchAll, 3600000)
